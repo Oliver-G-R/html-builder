@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-bg-dark: #1a1a2e;
+  --color-bg-card: #16213e;
+  --color-bg-panel: #0f3460;
+
+  --color-tag-structure: #4361ee;
+  --color-tag-text: #06d6a0;
+  --color-tag-style: #f77f00;
+  --color-tag-media: #ef476f;
+  --color-tag-list: #7b2cbf;
+  --color-tag-link: #00b4d8;
+  --color-tag-table: #ffd60a;
+  --color-tag-marquee: #e63946;
+
+  --font-display: 'Fredoka', sans-serif;
+  --font-code: 'Fira Code', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a1a2e;
+  color: #f0f0f0;
+  font-family: 'Fredoka', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+}
+
+@keyframes pop-in {
+  0% { transform: scale(0.8); opacity: 0; }
+  70% { transform: scale(1.05); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes slide-up {
+  from { transform: translateY(16px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes snap {
+  0% { transform: scale(1.08); }
+  50% { transform: scale(0.96); }
+  100% { transform: scale(1); }
+}
+
+@keyframes confetti-fall {
+  to { transform: translateY(100vh) rotate(720deg); opacity: 0; }
+}
+
+.animate-shake { animation: shake 0.35s ease; }
+.animate-pop-in { animation: pop-in 0.3s ease forwards; }
+.animate-slide-up { animation: slide-up 0.3s ease forwards; }
+.animate-snap { animation: snap 0.25s ease; }
+
+pre, code {
+  font-family: 'Fira Code', monospace;
+}

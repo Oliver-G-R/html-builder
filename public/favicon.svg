@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Fondo -->
+  <rect width="100" height="100" rx="20" fill="#13111C"/>
+  <!-- Pestañas superiores -->
+  <rect x="12" y="8" width="18" height="13" rx="4" fill="#4361ee"/>
+  <rect x="54" y="8" width="18" height="13" rx="4" fill="#06d6a0"/>
+  <rect x="12" y="54" width="18" height="13" rx="4" fill="#f77f00"/>
+  <rect x="54" y="54" width="18" height="13" rx="4" fill="#ef476f"/>
+  <!-- Bloque azul (TL) -->
+  <rect x="8" y="18" width="40" height="40" rx="9" fill="#4361ee"/>
+  <!-- Bloque verde (TR) -->
+  <rect x="52" y="18" width="40" height="40" rx="9" fill="#06d6a0"/>
+  <!-- Bloque naranja (BL) -->
+  <rect x="8" y="62" width="40" height="40" rx="9" fill="#f77f00"/>
+  <!-- Bloque rosa (BR) -->
+  <rect x="52" y="62" width="40" height="40" rx="9" fill="#ef476f"/>
+</svg>
