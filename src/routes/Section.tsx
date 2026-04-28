@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router';
 import { sections } from '../data/sections';
-import { useAppStore } from '../store/useAppStore';
 import { StructureBuilder } from '../components/DragDrop/StructureBuilder';
 import { TrueFalse } from '../components/Exercises/TrueFalse';
 import { MultipleChoice } from '../components/Exercises/MultipleChoice';
@@ -27,8 +26,6 @@ export function Section() {
   const navigate = useNavigate();
   const sectionId = Number(id);
   const section = sections.find((s) => s.id === sectionId);
-  const progress = useAppStore((s) => s.sections[sectionId]);
-
   const [exerciseIndex, setExerciseIndex] = useState(0);
   const [lessonDone, setLessonDone] = useState(false);
 

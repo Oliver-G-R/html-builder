@@ -18,8 +18,6 @@ export function Home() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {sections.map((section) => {
           const sectionProgress = progress[section.id] ?? { completed: false, score: 0, total: 0 };
-          const prevCompleted = section.id === 1 || progress[section.id - 1]?.completed;
-
           return (
             <SectionCard
               key={section.id}
