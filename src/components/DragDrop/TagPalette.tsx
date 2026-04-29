@@ -20,7 +20,12 @@ export function TagPalette({ items, usedIds, disabled }: TagPaletteProps) {
           <p className="text-sm text-white/30 italic">Todos los bloques usados</p>
         ) : (
           available.map((item) => (
-            <TagBlock key={item.id} item={item} disabled={disabled} />
+            <TagBlock
+              key={item.id}
+              item={item}
+              disabled={disabled}
+              colorIndex={items.indexOf(item)}
+            />
           ))
         )}
       </div>

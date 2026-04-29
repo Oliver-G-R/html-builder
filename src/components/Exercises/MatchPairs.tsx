@@ -4,7 +4,7 @@ import { ResultBanner } from '../Feedback/ResultBanner';
 import { Explanation } from '../Feedback/Explanation';
 import { useAppStore } from '../../store/useAppStore';
 import { triggerConfetti } from '../../utils/confetti';
-import { categoryColor } from '../../utils/categoryColor';
+import { colorByIndex } from '../../utils/categoryColor';
 
 interface MatchPairsProps {
   exercise: MatchPairsExercise;
@@ -50,10 +50,10 @@ export function MatchPairs({ exercise, sectionId, onNext }: MatchPairsProps) {
       <div className="grid grid-cols-2 gap-6">
         <div className="space-y-2">
           <p className="text-xs font-bold text-white/50 uppercase tracking-wider mb-3">Etiquetas</p>
-          {exercise.pairs.map((pair) => {
+          {exercise.pairs.map((pair, i) => {
             const isSelected = selectedTag === pair.tagId;
             const isMatched = pair.tagId in matches;
-            const color = categoryColor(pair.tagId);
+            const color = colorByIndex(i);
 
             return (
               <button

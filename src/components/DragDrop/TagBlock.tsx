@@ -1,20 +1,21 @@
 import { useDraggable } from '@dnd-kit/react';
 import type { DragItem } from '../../types/exercises';
-import { categoryColor } from '../../utils/categoryColor';
+import { colorByIndex } from '../../utils/categoryColor';
 
 interface TagBlockProps {
   item: DragItem;
   disabled?: boolean;
+  colorIndex: number;
 }
 
-export function TagBlock({ item, disabled = false }: TagBlockProps) {
+export function TagBlock({ item, disabled = false, colorIndex }: TagBlockProps) {
   const { ref, isDragging } = useDraggable({
     id: item.id,
     data: item,
     disabled,
   });
 
-  const color = categoryColor(item.category);
+  const color = colorByIndex(colorIndex);
 
   return (
     <div
