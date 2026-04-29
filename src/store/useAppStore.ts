@@ -22,7 +22,7 @@ export const useAppStore = create<AppState>()(
           sections: {
             ...state.sections,
             [sectionId]: {
-              completed: newTotal >= 3,
+              completed: newScore >= 3,
               score: newScore,
               total: newTotal,
             },

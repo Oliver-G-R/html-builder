@@ -42,7 +42,7 @@ export function SectionCard({ section, progress, locked = false }: SectionCardPr
       <p className="text-sm text-white/60 mb-4 leading-snug">{section.description}</p>
 
       <ProgressBar
-        value={progress.completed ? section.exercises.length : progress.total}
+        value={progress.score}
         max={section.exercises.length}
         color={color}
       />

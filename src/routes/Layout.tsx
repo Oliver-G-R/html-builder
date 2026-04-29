@@ -43,8 +43,8 @@ export function Layout() {
 
           <div className="flex-1 max-w-xs hidden sm:block">
             <ProgressBar
-              value={completedCount}
-              max={totalSections}
+              value={totalScore}
+              max={totalSections * 3}
               label={`${completedCount}/${totalSections} secciones`}
               color="#06d6a0"
             />
