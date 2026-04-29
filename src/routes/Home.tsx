@@ -11,7 +11,7 @@ export function Home() {
         <img src="/logo.svg" alt="" aria-hidden="true" className="h-20 sm:h-24 mx-auto mb-3" />
         <h1 className="sr-only">HTML Builder</h1>
         <p className="text-lg text-white/60 max-w-xl mx-auto">
-          Aprende HTML arrastrando bloques, resolviendo ejercicios y construyendo páginas web.
+          Aprende HTML arrastrando bloques, resolviendo ejercicios y dominando las etiquetas.
         </p>
       </div>
 

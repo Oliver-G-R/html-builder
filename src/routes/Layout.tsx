@@ -4,7 +4,7 @@ import { useAppStore } from '../store/useAppStore';
 import { ProgressBar } from '../components/Progress/ProgressBar';
 import { sections } from '../data/sections';
 
-const BASE_TITLE = 'HTML Builder · Cultura Digital II';
+const BASE_TITLE = 'HTML Builder';
 
 function useDynamicTitle() {
   const { pathname } = useLocation();
@@ -98,7 +98,7 @@ export function Layout() {
       </main>
 
       <footer className="border-t border-white/10 py-4 text-center text-xs text-white/30">
-        Cultura Digital II · HTML Builder
+        HTML Builder
       </footer>
     </div>
   );
