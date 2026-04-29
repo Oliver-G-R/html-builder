@@ -55,9 +55,9 @@ export const sections: Section[] = [
     lesson: {
       intro: 'La etiqueta <IMG> permite insertar imágenes en la página. Es una etiqueta vacía (no necesita cierre) y tiene varios atributos importantes.',
       points: [
-        { title: 'Atributos de IMG', content: 'SRC (obligatorio): ruta de la imagen. ALT: texto alternativo. WIDTH y HEIGHT: dimensiones en píxeles. BORDER: grosor del borde.', code: '<IMG SRC="foto.jpg"\n     ALT="Una fotografía"\n     WIDTH="300"\n     HEIGHT="200"\n     BORDER="2">' },
+        { title: 'Atributos de IMG', content: 'SRC (obligatorio): ruta de la imagen. ALT: texto alternativo. WIDTH y HEIGHT: dimensiones en píxeles. BORDER: grosor del borde.', code: '<IMG SRC="/logo.svg"\n     ALT="Logo HTML Builder"\n     WIDTH="80"\n     HEIGHT="80"\n     BORDER="2">' },
         { title: 'GIF vs JPEG', content: 'GIF: hasta 256 colores, admite transparencia y animaciones. Bueno para logos y gráficos.\nJPEG: millones de colores, compresión variable. Mejor para fotografías.' },
-        { title: 'Imágenes como enlaces', content: 'Puedes usar una imagen como enlace envolviendo <IMG> dentro de <A>.', code: '<A HREF="pagina.html">\n  <IMG SRC="boton.gif">\n</A>' },
+        { title: 'Imágenes como enlaces', content: 'Puedes usar una imagen como enlace envolviendo <IMG> dentro de <A>.', code: '<A HREF="pagina.html">\n  <IMG SRC="/logo.svg" WIDTH="60" HEIGHT="60">\n</A>' },
       ],
     },
     exercises: exercisesBySection[4],
