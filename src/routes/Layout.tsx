@@ -51,12 +51,41 @@ export function Layout() {
           </div>
 
           <div className="flex items-center gap-3">
-            <div className="text-sm text-white/70">
-              ⭐ <span className="font-bold text-white">{totalScore}</span> pts
+            <div className="flex items-center gap-2 text-sm text-white/70">
+              <div
+                className="w-7 h-7 rounded-lg flex items-center justify-center shrink-0"
+                style={{
+                  background: 'transparent padding-box, linear-gradient(135deg, #ef476f, #4361ee, #06d6a0, #f77f00) border-box',
+                  border: '2px solid transparent',
+                }}
+              >
+                <svg viewBox="0 0 24 24" className="w-4 h-4" fill="none">
+                  <defs>
+                    <linearGradient id="star-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                      <stop offset="0%" stopColor="#ef476f" />
+                      <stop offset="33%" stopColor="#4361ee" />
+                      <stop offset="66%" stopColor="#06d6a0" />
+                      <stop offset="100%" stopColor="#f77f00" />
+                    </linearGradient>
+                  </defs>
+                  <path
+                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                    stroke="url(#star-grad)"
+                    strokeWidth="1.5"
+                    strokeLinejoin="round"
+                    fill="url(#star-grad)"
+                  />
+                </svg>
+              </div>
+              <span className="font-bold text-white">{totalScore}</span> pts
             </div>
             <button
               onClick={() => { if (confirm('¿Reiniciar todo el progreso?')) resetProgress(); }}
-              className="text-xs text-white/30 hover:text-white/60 transition-colors cursor-pointer"
+              className="text-xs font-bold text-white/80 hover:text-white px-3 py-1.5 rounded-lg transition-all hover:scale-105 cursor-pointer"
+              style={{
+                background: 'linear-gradient(#16213e, #16213e) padding-box, linear-gradient(90deg, #ef476f, #4361ee, #06d6a0, #f77f00) border-box',
+                border: '2px solid transparent',
+              }}
             >
               Reiniciar
             </button>
